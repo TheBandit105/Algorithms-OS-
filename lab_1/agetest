@@ -1,0 +1,4 @@
+#!/bin/bash
+age=25
+echo you are age years old
+echo you are $age years old

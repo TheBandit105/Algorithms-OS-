@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "Enter your name and age: "
+read answer 
+read answer2
+if [[ "$answer2" -lt 20 ]] 
+then
+	echo ""
+	echo "$answer you are still young! Enjoy life!"
+else 
+	echo ""
+	echo "$answer you are $answer2, you are now working!"
+fi
+
