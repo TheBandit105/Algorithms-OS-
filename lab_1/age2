@@ -1,13 +1,16 @@
 #!/bin/bash
-echo "Enter your name and age: "
-read answer 
-read answer2
-if [[ "$answer2" -lt 20 ]] 
-then
-	echo ""
-	echo "$answer you are still young! Enjoy life!"
-else 
-	echo ""
-	echo "$answer you are $answer2, you are now working!"
-fi
 
+#shell script to check if the person is younger than 20, if true, then person is young.
+echo "Enter your name and age: "
+read answer
+read answer2
+# reads input from answer2 and if less than 20, will follow the below process.
+if [[ "$answer2" -lt 20 ]]
+then
+	# echo commands which prints the name and age of the user depending on the if statement.
+	echo ""
+	echo "$answer, you are still young! Enjoy life!"
+else
+	echo ""
+	echo "$answer, you are $answer2 and getting old, you are now working!"
+fi
