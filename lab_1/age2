@@ -1,5 +1,4 @@
 #!/bin/bash
-
 #shell script to check if the person is younger than 20, if true, then person is young.
 echo "Enter your name and age: "
 read answer
