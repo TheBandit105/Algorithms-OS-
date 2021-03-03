@@ -19,7 +19,8 @@ struct my_msgbuf {
 
 void sigint_handler(int sig)
 {
-  write(0, "\nSignal Terminated! Emergency transporter sent!\n", 50);
+  write(0, "\nSignal Terminated! Emergency transporter sent!\n", 47);
+  write(0, "\n", 2);
 }
 
 int main(void)
