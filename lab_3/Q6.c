@@ -1,5 +1,5 @@
 /*
-** pipe3.c -- a smartest pipe example
+** Q6.c -- a smartest pipe example using cat /etc/group|sort|cut -f3 -d:
 */
 #include <stdio.h>
 #include <stdlib.h>
