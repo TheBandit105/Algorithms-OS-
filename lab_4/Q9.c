@@ -45,15 +45,16 @@ int main()
     printf("\n"); /* bit of whitespace */
 
     pthread_mutex_init(&mutexsum, NULL);
-
-    /* Creates threads to perform dot multiplication */
+    
+    /* performing dot multiplication through the initialisation of the
+       pthreads */
     pthread_attr_init(&attr);
     pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
 
     /* to loop and create the required number of processes */
     /* NOTE carefully how only the child process is left to run */
     for(t=0;t<NUM_THREADS;t++)
-    {  /* Do the fork and catch it if it/one fails */
+    {  
           /* give a message about the proc ID */
             printf("IN MAIN: creating thread %ld\n", t);
 
